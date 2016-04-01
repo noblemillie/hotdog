@@ -4,6 +4,7 @@ var router = express.Router();
 // Require the User model
 var Dawg = require('../models/dawg');
 
+
 /* GET display a new form to add a user */
 router.get('/new', function(req, res, next) {
   res.render('dawgs/new', { title: 'Hotdog' });

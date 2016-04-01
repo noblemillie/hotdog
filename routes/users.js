@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 // Require the User model
-var Dawg = require('../models/dawg');
+var dawg = require('../models/dawg');
 
 
 /* GET display a new form to add a user */

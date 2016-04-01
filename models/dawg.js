@@ -8,7 +8,7 @@ var dawgSchema = new mongoose.Schema({
 });
 
 // Method to "say hello"
-userSchema.methods.sayWhatup = function() {
+dawgSchema.methods.sayWhatup = function() {
   console.log("What's up " + this.name + '! Time to fetch some ' + this.favoritetoy + ', if you know what I\'\m sayin.');
 };
 

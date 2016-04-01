@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 // Require the User model
-var dawg = require('../models/dawg');
+var Dawg = require('../models/dawg');
+
 
 /* GET display a new form to add a user */
 router.get('/new', function(req, res, next) {
@@ -28,6 +29,7 @@ router.post('/', function(req, res, next) {
     // Save the user
     newDawg.save(function(err, user) {
         if (err) console.log(err);
+        console.log(user);
 
         res.send('What up Dawg!!');
     });

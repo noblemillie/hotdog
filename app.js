@@ -28,6 +28,7 @@ mongoose.connect(process.env.DB_HOTDOG);
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/dawgs', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

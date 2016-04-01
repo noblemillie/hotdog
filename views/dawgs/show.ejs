@@ -1,3 +1,123 @@
-<h2>New Dawg</h2>
+<!-- <h2>New Dawg</h2>
 <h3><%= name %></h3>
-<p><%= favoritetoy %></p>
+<p><%= favoritetoy %></p> -->
+
+
+<html data-wf-site="56f4d31afeb170fe27e2f177" data-wf-page="56f4d31afeb170fe27e2f193">
+<head>
+  <meta charset="utf-8">
+  <title>Hotdog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/webflow.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="https://use.typekit.net/tgy6upv.js"></script>
+  <script type="text/javascript">
+    try{Typekit.load();}catch(e){}
+  </script>
+  <script type="text/javascript" src="../js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
+  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+  <style type="text/css">
+
+    /* START GENERAL STYLES */
+          @media screen and (min-width: 1200px) {
+            .w-container {
+              max-width: 1170px; }
+          }
+          /* END GENERAL STYLES*/
+  </style>
+
+</head>
+<body>
+  <div class="w-section demo-section last-demo-section">
+    <div class="w-container container center-container">
+      <div data-duration-in="300" data-duration-out="100" class="w-tabs demo-tabs">
+        <div class="w-tab-menu demo-tabs-menu">
+          <a data-w-tab="DemoTabOne" class="w-tab-link w-inline-block demo-tab-select-tab-1">
+            <div class="demo-tab-title">Sniff</div>
+          </a>
+          <a data-w-tab="DemoTabTwo" class="w-tab-link w--current w-inline-block demo-tab-select-tab-2">
+            <div class="demo-tab-title">Bark</div>
+          </a>
+        </div>
+        <div class="w-tab-content demo-tab-content">
+          <div data-w-tab="DemoTabOne" class="w-tab-pane demo-tab-pane">
+            <h2 class="h1-demo-centered"> You <em>Sniffin</em> me, you dirty dog?</h2>
+            <p class="p-demo-placeholder-text">You're the man now, dog</p>
+          </div>
+
+
+          <div data-w-tab="DemoTabTwo" class="w-tab-pane w--tab-active demo-tab-pane">
+            <h1 class="h1-demo-centered">You <em>barkin</em> to me?</h1>
+            <p class="p-demo-placeholder-text">Bark that again, I double dare you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+
+  <script>
+    // START SELECT SPECIFIC TAB FROM A LINK
+    var Webflow = Webflow || [];
+    Webflow.push(function () {
+      var tabName = getParam('tab');
+      if (!tabName) return;
+      $('.' + tabName).triggerHandler('click');
+      function getParam(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    });
+        // END SELECT SPECIFIC TAB FROM A LINK
+  </script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+            $('#slideshow').embedagram({
+                    instagram_id: 1690465262,
+                    thumb_width: 313.33,
+                    wrap_tag: 'div'
+                });
+        });
+  </script>
+  <script>
+
+    eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(0($){$.q.h({7:0(d){1 e={8:-v,4:u,2:\'n\',3:\'m\',5:l,f:0(){6 j},};1 d=$.h(e,d);6 g.k(0(){1 o=d;1 b=$(g);1 c="p://7.i/e/r/"+o.8+"/?s=?";c+="&4="+o.4+"&2="+o.2;c+="&5="+o.5+"&3="+o.3;$.t(c,0(a){b.9(a.9);o.f.w(b)});6 b})}})})(x);',34,34,'function|var|wrap_tag|link_type|thumb_width|limit|return|embedagram|instagram_id|html||||||success|this|extend|com|true|each|20|web|li||http|fn|plugin|callback|getJSON|100|999|apply|jQuery'.split('|'),0,{}))
+  </script>
+  <script>
+    // On page ready
+    var Webflow = Webflow || [];
+    Webflow.push(function() {
+      // For any tab-prev and tab-next clicks
+      $('.demo-tab-wrapper').on('click', '.demo-tab-link-prev, .demo-tab-link-next', function() {
+        // Get direction
+        var direction = $(this).hasClass('demo-tab-link-prev') ? -1 : 1;
+        // Get the tab links
+        var tablinks = $(this).parent().find('.w-tab-menu');
+        // Get index of current tab link, add direction
+        var index = tablinks.find('.w--current').index() + direction;
+        // If array out of bounds, click on the first
+        index = index >= tablinks.children().length ? 0 : index;
+        // Update tabs by triggering a "tap" event on the corresponding slide button
+        tablinks.find('.w-tab-link').eq(index).trigger('click');
+      }); // End click handler
+    }); // End ready function
+  </script>
+</html>
